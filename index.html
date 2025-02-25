@@ -1,0 +1,290 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Email App
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+        }
+  </style>
+ </head>
+ <body class="bg-gray-100">
+  <div class="flex h-screen">
+   <!-- Sidebar -->
+   <div class="w-64 bg-white shadow-md">
+    <div class="p-4 border-b">
+     <h1 class="text-2xl font-bold">
+      iMail
+     </h1>
+    </div>
+    <div class="p-4">
+     <ul>
+      <li class="mb-4">
+       <a class="flex items-center text-gray-700 hover:text-blue-500" href="#">
+        <i class="fas fa-inbox mr-2">
+        </i>
+        Inbox
+       </a>
+      </li>
+      <li class="mb-4">
+       <a class="flex items-center text-gray-700 hover:text-blue-500" href="#">
+        <i class="fas fa-paper-plane mr-2">
+        </i>
+        Sent
+       </a>
+      </li>
+      <li class="mb-4">
+       <a class="flex items-center text-gray-700 hover:text-blue-500" href="#">
+        <i class="fas fa-trash mr-2">
+        </i>
+        Trash
+       </a>
+      </li>
+      <li class="mb-4">
+       <a class="flex items-center text-gray-700 hover:text-blue-500" href="#">
+        <i class="fas fa-star mr-2">
+        </i>
+        Starred
+       </a>
+      </li>
+      <li class="mb-4">
+       <a class="flex items-center text-gray-700 hover:text-blue-500" href="#">
+        <i class="fas fa-archive mr-2">
+        </i>
+        Archived
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+   <!-- Main Content -->
+   <div class="flex-1 flex flex-col">
+    <!-- Header -->
+    <div class="flex items-center justify-between p-4 bg-white shadow-md">
+     <div class="flex items-center">
+      <button class="text-gray-700 hover:text-blue-500 mr-4">
+       <i class="fas fa-bars">
+       </i>
+      </button>
+      <h2 class="text-xl font-bold">
+       Inbox
+      </h2>
+     </div>
+     <div class="flex items-center">
+      <input class="border rounded p-2 mr-4" placeholder="Search mail" type="text"/>
+      <button class="text-gray-700 hover:text-blue-500">
+       <i class="fas fa-search">
+       </i>
+      </button>
+     </div>
+    </div>
+    <!-- Email List -->
+    <div class="flex-1 overflow-y-auto p-4">
+     <div class="bg-white shadow-md rounded mb-4 p-4 flex items-center">
+      <img alt="Profile picture of John Doe" class="rounded-full mr-4" height="50" src="https://storage.googleapis.com/a1aa/image/WZVRLy4x0W0l_clBdvSA-qejObLxVCwnFH7fSSk3mK4.jpg" width="50"/>
+      <div class="flex-1">
+       <h3 class="text-lg font-bold">
+        Subhanku Saha
+       </h3>
+       <p class="text-gray-600">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+       </p>
+      </div>
+      <div class="text-gray-600">
+       10:30 AM
+      </div>
+     </div>
+     <div class="bg-white shadow-md rounded mb-4 p-4 flex items-center">
+      <img alt="Profile picture of Jane Smith" class="rounded-full mr-4" height="50" src="https://storage.googleapis.com/a1aa/image/fvqApOrEXOa9Nu94KRFUMAcFo9_2lMg_3VImuJHCoMU.jpg" width="50"/>
+      <div class="flex-1">
+       <h3 class="text-lg font-bold">
+        Pranjali Das Roy
+       </h3>
+       <p class="text-gray-600">
+        Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...
+       </p>
+      </div>
+      <div class="text-gray-600">
+       9:15 AM
+      </div>
+     </div>
+     <div class="bg-white shadow-md rounded mb-4 p-4 flex items-center">
+      <img alt="Profile picture of Alice Johnson" class="rounded-full mr-4" height="50" src="https://storage.googleapis.com/a1aa/image/vCGTy3Y01dKgWgdQZnrEi7HGku0t7bRlzXlgd3bP4fk.jpg" width="50"/>
+      <div class="flex-1">
+       <h3 class="text-lg font-bold">
+        Bijan Krishna Paul
+       </h3>
+       <p class="text-gray-600">
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...
+       </p>
+      </div>
+      <div class="text-gray-600">
+       Yesterday
+      </div>
+     </div>
+     <div class="bg-white shadow-md rounded mb-4 p-4 flex items-center">
+      <img alt="Profile picture of Bob Brown" class="rounded-full mr-4" height="50" src="https://storage.googleapis.com/a1aa/image/Aghk77lvJ_NvUOWQ5B2YOpzdH-cVJE_5dbotSk6E2BA.jpg" width="50"/>
+      <div class="flex-1">
+       <h3 class="text-lg font-bold">
+        Sayan Singha
+       </h3>
+       <p class="text-gray-600">
+        Duis aute irure dolor in reprehenderit in voluptate velit esse...
+       </p>
+      </div>
+      <div class="text-gray-600">
+       Yesterday
+      </div>
+     </div>
+     <div class="bg-white shadow-md rounded mb-4 p-4 flex items-center">
+      <img alt="Profile picture of Charlie Davis" class="rounded-full mr-4" height="50" src="https://storage.googleapis.com/a1aa/image/3kW4ryiTU2UOIrvr6j45-cSyXvq151gNXQZzghlF6Vo.jpg" width="50"/>
+      <div class="flex-1">
+       <h3 class="text-lg font-bold">
+        Kishan Ghosh
+       </h3>
+       <p class="text-gray-600">
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui...
+       </p>
+      </div>
+      <div class="text-gray-600">
+       2 days ago
+      </div>
+     </div>
+     <div class="bg-white shadow-md rounded mb-4 p-4 flex items-center">
+      <img alt="Profile picture of Diana Evans" class="rounded-full mr-4" height="50" src="https://storage.googleapis.com/a1aa/image/Ub0Qbl6YO1W0L1S1h_9SXoa5eBY1wf79TSn-UDGc25g.jpg" width="50"/>
+      <div class="flex-1">
+       <h3 class="text-lg font-bold">
+        Annonymous
+       </h3>
+       <p class="text-gray-600">
+        Mollit anim id est laborum. Lorem ipsum dolor sit amet...
+       </p>
+      </div>
+      <div class="text-gray-600">
+       2 days ago
+      </div>
+     </div>
+     <div class="bg-white shadow-md rounded mb-4 p-4 flex items-center">
+      <img alt="Profile picture of Edward Harris" class="rounded-full mr-4" height="50" src="https://storage.googleapis.com/a1aa/image/V-bTYvLkPlgXojnmaNy2UTjiu9oZXDQd4DOzdEZYhkk.jpg" width="50"/>
+      <div class="flex-1">
+       <h3 class="text-lg font-bold">
+        Dennis Ritche
+       </h3>
+       <p class="text-gray-600">
+        Consectetur adipiscing elit, sed do eiusmod tempor incididunt...
+       </p>
+      </div>
+      <div class="text-gray-600">
+       3 days ago
+      </div>
+     </div>
+     <div class="bg-white shadow-md rounded mb-4 p-4 flex items-center">
+      <img alt="Profile picture of Fiona Green" class="rounded-full mr-4" height="50" src="https://storage.googleapis.com/a1aa/image/80L3aT6evk59ggm1fgkSnY9B_O3VH2_-dunMFNZyS3E.jpg" width="50"/>
+      <div class="flex-1">
+       <h3 class="text-lg font-bold">
+        Sundar Pichai
+       </h3>
+       <p class="text-gray-600">
+        Ut labore et dolore magna aliqua. Ut enim ad minim veniam...
+       </p>
+      </div>
+      <div class="text-gray-600">
+       3 days ago
+      </div>
+     </div>
+     <div class="bg-white shadow-md rounded mb-4 p-4 flex items-center">
+      <img alt="Profile picture of George Hill" class="rounded-full mr-4" height="50" src="https://storage.googleapis.com/a1aa/image/y8uJ8XZx8o2CB0q28Rjzw1vPIAVdJ3KmgjTRXu6ajYY.jpg" width="50"/>
+      <div class="flex-1">
+       <h3 class="text-lg font-bold">
+        Sam Altman
+       </h3>
+       <p class="text-gray-600">
+        Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea...
+       </p>
+      </div>
+      <div class="text-gray-600">
+       4 days ago
+      </div>
+     </div>
+     <div class="bg-white shadow-md rounded mb-4 p-4 flex items-center">
+      <img alt="Profile picture of Hannah King" class="rounded-full mr-4" height="50" src="https://storage.googleapis.com/a1aa/image/JRwKjm80riuQW5XtH__TxksmNZe64IWpnfIPVkEkGsw.jpg" width="50"/>
+      <div class="flex-1">
+       <h3 class="text-lg font-bold">
+        Annonymous
+       </h3>
+       <p class="text-gray-600">
+        Commodo consequat. Duis aute irure dolor in reprehenderit...
+       </p>
+      </div>
+      <div class="text-gray-600">
+       4 days ago
+      </div>
+     </div>
+     <div class="bg-white shadow-md rounded mb-4 p-4 flex items-center">
+      <img alt="Profile picture of Ian Lewis" class="rounded-full mr-4" height="50" src="https://storage.googleapis.com/a1aa/image/hcGk4nAcJehHiOeFoW3N2rxbR3I0k9WXVlyizX74Ps4.jpg" width="50"/>
+      <div class="flex-1">
+       <h3 class="text-lg font-bold">
+        Annonymous
+       </h3>
+       <p class="text-gray-600">
+        In voluptate velit esse cillum dolore eu fugiat nulla pariatur...
+       </p>
+      </div>
+      <div class="text-gray-600">
+       5 days ago
+      </div>
+     </div>
+     <div class="bg-white shadow-md rounded mb-4 p-4 flex items-center">
+      <img alt="Profile picture of Julia Martin" class="rounded-full mr-4" height="50" src="https://storage.googleapis.com/a1aa/image/_gUM2fdaB8QPcf5UHSqcqe9L6W6pPPIfF9kw8uJ6TyU.jpg" width="50"/>
+      <div class="flex-1">
+       <h3 class="text-lg font-bold">
+        Annonymous
+       </h3>
+       <p class="text-gray-600">
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa...
+       </p>
+      </div>
+      <div class="text-gray-600">
+       5 days ago
+      </div>
+     </div>
+     <div class="bg-white shadow-md rounded mb-4 p-4 flex items-center">
+      <img alt="Profile picture of Kevin Nelson" class="rounded-full mr-4" height="50" src="https://storage.googleapis.com/a1aa/image/yVtDne2pnaV5cxL3ebTnKZqeIAjKWGhDvLXUzDkZY-E.jpg" width="50"/>
+      <div class="flex-1">
+       <h3 class="text-lg font-bold">
+        Annonymous
+       </h3>
+       <p class="text-gray-600">
+        Qui officia deserunt mollit anim id est laborum...
+       </p>
+      </div>
+      <div class="text-gray-600">
+       6 days ago
+      </div>
+     </div>
+     <div class="bg-white shadow-md rounded mb-4 p-4 flex items-center">
+      <img alt="Profile picture of Laura Owens" class="rounded-full mr-4" height="50" src="https://storage.googleapis.com/a1aa/image/ZVDhCCVs7u0AfMZ5bYTS1XxM-myIDTGaBaLfOPUtDfY.jpg" width="50"/>
+      <div class="flex-1">
+       <h3 class="text-lg font-bold">
+        Annonymous
+       </h3>
+       <p class="text-gray-600">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+       </p>
+      </div>
+      <div class="text-gray-600">
+       6 days ago
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
